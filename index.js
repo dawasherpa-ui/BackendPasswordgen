@@ -8,7 +8,7 @@ const PORT=process.env.PORT || 3000
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(cors({
-    origin: 'http://localhost:5173/'
+    origin: 'https://password-generator-three-roan.vercel.app/'
   }));
 app.get("/",(req,res)=>{
     res.send({msg:"Hello World"})
